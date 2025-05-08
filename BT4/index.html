@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Form Mẫu</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        h2 {
+            background-color: #eee;
+            padding: 5px;
+        }
+        form {
+            width: 800px;
+            margin: auto;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 5px;
+            vertical-align: top;
+        }
+        input[type="text"], input[type="email"], input[type="datetime-local"], select, textarea {
+            width: 100%;
+            padding: 5px;
+        }
+        textarea {
+            height: 80px;
+        }
+        .toolbar {
+            background-color: #ddd;
+            padding: 5px;
+            font-size: 13px;
+        }
+        .captcha img {
+            border: 1px solid #ccc;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .buttons input {
+            padding: 8px 15px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <h2>Basic Info</h2>
+    <table>
+        <tr>
+            <td>Employee ID</td>
+            <td><span>9</span></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><span>Dodsworth</span></td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" value="Anne"></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <div><input type="radio" name="gender"> Male</div>
+                <div><input type="radio" name="gender" checked> Female</div>
+                <div><input type="radio" name="gender"> XXX</div>
+                <div><input type="radio" name="gender"> ZZZ</div>
+            </td>
+        </tr>
+        <tr>
+            <td>Title</td>
+            <td><input type="text" value="Sales Representative"></td>
+        </tr>
+        <tr>
+            <td>Suffix</td>
+            <td><input type="text" value="Ms."></td>
+        </tr>
+        <tr>
+            <td>BirthDate</td>
+            <td><input type="datetime-local" value="1969-07-02T00:00"></td>
+        </tr>
+        <tr>
+            <td>HireDate</td>
+            <td><input type="datetime-local" value="1994-11-15T00:00"></td>
+        </tr>
+        <tr>
+            <td>SSN</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Reports To</td>
+            <td>
+                <select>
+                    <option>Buchanan</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Contact Info</h2>
+    <table>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" placeholder="name@example.com"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><input type="text" value="7 Houndstooth Rd."></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td><input type="text" value="London"></td>
+        </tr>
+        <tr>
+            <td>Region</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Postal Code</td>
+            <td><input type="text" value="WG2 7LT"></td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td>
+                <select>
+                    <option>Russian Federation</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>US Home Phone</td>
+            <td><input type="text" value="(234)234-2342"></td>
+        </tr>
+        <tr>
+            <td>Photo</td>
+            <td><input type="text" value="EmpID9.bmp"></td>
+        </tr>
+    </table>
+
+    <h2>Optional Info</h2>
+    <table>
+        <tr>
+            <td>Notes</td>
+            <td>
+                <div class="toolbar">B I U Font Size Align Insert Link</div>
+                <textarea>Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German.ZZZ</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>Preferred Shift</td>
+            <td>
+                <input type="radio" name="shift" checked> Regular
+                <input type="radio" name="shift"> Gravy Yard
+            </td>
+        </tr>
+        <tr>
+            <td>Active?</td>
+            <td><input type="checkbox" checked></td>
+        </tr>
+        <tr>
+            <td>Are you human?</td>
+            <td class="captcha">
+                <img src="https://dummyimage.com/100x30/cccccc/000000&text=TIDAWO" alt="captcha">
+                <input type="text">
+                <a href="#">Click to change</a>
+            </td>
+        </tr>
+    </table>
+
+    <div class="buttons">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Cancel">
+    </div>
+</form>
+
+</body>
+</html>
