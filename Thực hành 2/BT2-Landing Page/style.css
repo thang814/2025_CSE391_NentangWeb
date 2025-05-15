@@ -1,0 +1,212 @@
+/* Reset đơn giản */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #eef4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #fff;
+  border-bottom: 2px solid #ccc;
+}
+
+#page-logo a {
+  font-family: 'Oleo Script', cursive;
+  font-size: 28px;
+  color: gold;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+
+header, header nav {
+  background-image: url('Images/ocean.jpg'); /* Sử dụng ảnh nền giống phần hero */
+  background-size: cover;
+  background-position: top;
+  color: white;
+}
+
+header {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero section */
+#hero {
+  background: url('Images/ocean.jpg') center/cover no-repeat;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#hero-content h1 {
+  font-size: 32px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#hero-content p {
+  margin: 10px 0 20px;
+}
+
+#hero-content a {
+  text-decoration: none;
+  background-color: yellow;
+  color: black;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Highlights section */
+/*
+#highlights {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#highlights h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+#destinations {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.destination {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.destination img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.destination p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+*/
+
+
+
+#highlights {
+  background-color: #c0f7f7; /* màu nền xanh nhạt như trong ảnh */
+  padding: 20px 0;
+  text-align: center;
+}
+
+#destinations {
+  display: flex;
+  justify-content: space-around; /* căn đều khoảng cách */
+  list-style: none;
+  padding: 10px 0;
+  margin: 0 20px; /* tạo khoảng cách 2 bên */
+  border-radius: 10px; /* bo góc */
+  background-color: #caf0f8; /* nền nhẹ hơn cho phần ảnh */
+}
+
+.destination {
+  flex: 1; /* cho các ảnh chiếm đều chiều ngang */
+  margin: 0 10px; /* khoảng cách giữa các ảnh */
+  border-radius: 10px;
+  overflow: hidden; /* để bo tròn ảnh */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* đổ bóng nhẹ */
+}
+
+.destination img {
+  width: 100%;
+  height: 120px; /* chiều cao ảnh, bạn có thể tăng nếu muốn ảnh dài hơn */
+  object-fit: cover; /* giữ tỉ lệ và cắt ảnh vừa form */
+  border-radius: 10px;
+}
+
+.destination p {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #004c4c;
+}
+
+.destination p strong {
+  color: #0b8a8a;
+}
+/* Footer */
+footer {
+  background-color: #222;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer img {
+  width: 32px;
+  height: 32px;
+}
+
+
+
+/* */
+
